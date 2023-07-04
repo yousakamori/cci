@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>cci</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- header -->
+      <header>
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+          <div class="navbar-brand">
+            <a class="navbar-item" href="./">
+              <img
+                src="https://bulma.io/images/bulma-logo.png"
+                width="112"
+                height="28"
+              />
+            </a>
+
+            <a
+              role="button"
+              class="navbar-burger"
+              aria-label="menu"
+              aria-expanded="false"
+              data-target="navbarBasicExample"
+            >
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+            </a>
+          </div>
+
+          <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+              <a class="navbar-item"> Home </a>
+
+              <a class="navbar-item"> Documentation </a>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <main class="py-6">
+        <div class="tabs">
+          <ul>
+            <li data-target="tab-content1" id="tab1" class="is-active">
+              <a tabindex="0" role="button">Tab 1</a>
+            </li>
+            <li data-target="tab-content2" id="tab2">
+              <a tabindex="0" role="button">Tab 2</a>
+            </li>
+            <li data-target="tab-content3" id="tab3">
+              <a tabindex="0" role="button">Tab 3</a>
+            </li>
+          </ul>
+        </div>
+        <div id="tab-content1" class="tab-content is-active">Tab 1 Content</div>
+        <div id="tab-content2" class="tab-content">Tab 2 Content</div>
+        <div id="tab-content3" class="tab-content">Tab 3 Content</div>
+
+        <!-- tabs -->
+        <div class="tabs is-toggle">
+          <ul>
+            <li class="is-active">
+              <a>
+                <span class="icon is-small"
+                  ><i class="fas fa-image" aria-hidden="true"></i
+                ></span>
+                <span>Pictures</span>
+              </a>
+            </li>
+            <li>
+              <a>
+                <span class="icon is-small"
+                  ><i class="fas fa-music" aria-hidden="true"></i
+                ></span>
+                <span>Music</span>
+              </a>
+            </li>
+            <li>
+              <a>
+                <span class="icon is-small"
+                  ><i class="fas fa-film" aria-hidden="true"></i
+                ></span>
+                <span>Videos</span>
+              </a>
+            </li>
+            <li>
+              <a>
+                <span class="icon is-small"
+                  ><i class="far fa-file-alt" aria-hidden="true"></i
+                ></span>
+                <span>Documents</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="control mt-6">
+          <label class="radio">
+            <input type="radio" name="rsvp" />
+            Going
+          </label>
+          <label class="radio">
+            <input type="radio" name="rsvp" />
+            Not going
+          </label>
+          <label class="radio">
+            <input type="radio" name="rsvp" />
+            Maybe
+          </label>
+        </div>
+
+        <textarea
+          class="textarea"
+          placeholder="10 lines of textarea"
+          rows="10"
+        ></textarea>
+      </main>
+
+      <footer></footer>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
